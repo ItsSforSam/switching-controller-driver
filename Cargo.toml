@@ -2,10 +2,25 @@
 name = "switching-controller-driver"
 version = "0.1.0"
 authors = ["S for Sam"]
+license = "MIT"
+
+keywords = ["hardware","driver","controller","nintendo_switch","hid"] # crates.io allows 5 MAX
+
+publish = false # want to prevent publishing to crate.io, especally in eary stages
+
 edition = "2021"
 resolver = "2"
 repository = "https://github.com/ItsSforSam/switching-controller-driver"
 [dependencies]
 hidapi = "2.6.3"
+lazy_static = "1.5.0"
 log = "0.4.22"
 # libusb = "0.3.0" # was causing issues
+
+[lints.clippy]
+deprecated = "deny"
+[lints.rust]
+deprecated = "deny"
+
+[features]
+default = []
