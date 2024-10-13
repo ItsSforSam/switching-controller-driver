@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "hidapi"
+    ],
+    // "rust-analyzer.checkOnSave.command": "clippy",
+    // default: cargo check --quiet --workspace --message-format=json --all-targets --keep-going
+    "rust-analyzer.cargo.buildScripts.overrideCommand": ["cargo","clippy","--quiet", "--workspace", "--message-format=json", "--all-targets", "--keep-going"],
+    // "[rust]": {
+    //     "files.autoSave": "afterDelay"
+    // },
+    // "rust-analyzer.checkOnSave": false
+}
