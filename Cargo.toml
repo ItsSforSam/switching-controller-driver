@@ -1,0 +1,11 @@
+[package]
+name = "switching-controller-driver"
+version = "0.1.0"
+authors = ["S for Sam"]
+edition = "2021"
+resolver = "2"
+repository = "https://github.com/ItsSforSam/switching-controller-driver"
+[dependencies]
+hidapi = "2.6.3"
+log = "0.4.22"
+# libusb = "0.3.0" # was causing issues
